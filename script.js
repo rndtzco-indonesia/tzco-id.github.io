@@ -295,8 +295,8 @@ document.getElementById('langBtn')?.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.getElementById('newsTrack');
   const template = document.getElementById('newsCardTemplate');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
+  // const prevBtn = document.getElementById('prevBtn');
+  // const nextBtn = document.getElementById('nextBtn');
 
   if (!track || !template) return;
 
@@ -327,23 +327,23 @@ document.addEventListener('DOMContentLoaded', () => {
     track.style.transform = `translateX(-${moveDistance}px)`;
 
     // Enable/disable buttons at boundaries
-    prevBtn.disabled = currentIndex === 0;
-    nextBtn.disabled = currentIndex >= totalCards - VISIBLE_CARDS;
+    // prevBtn.disabled = currentIndex === 0;
+    // nextBtn.disabled = currentIndex >= totalCards - VISIBLE_CARDS;
   };
 
-  nextBtn.addEventListener('click', () => {
-    if (currentIndex < totalCards - VISIBLE_CARDS) {
-      currentIndex++;
-      updateSlider();
-    }
-  });
+  // nextBtn.addEventListener('click', () => {
+  //   if (currentIndex < totalCards - VISIBLE_CARDS) {
+  //     currentIndex++;
+  //     updateSlider();
+  //   }
+  // });
 
-  prevBtn.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
+  // prevBtn.addEventListener('click', () => {
+  //   if (currentIndex > 0) {
+  //     currentIndex--;
+  //     updateSlider();
+  //   }
+  // });
 
   // Recalculate movement distance if browser window resizes
   window.addEventListener('resize', updateSlider);
