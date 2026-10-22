@@ -350,6 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize button states
   updateSlider();
+});
 
   // Hero Background Image Slider
   const slides = document.querySelectorAll('.hero-slide-index');
@@ -361,4 +362,3 @@ document.addEventListener('DOMContentLoaded', () => {
       slides[currentSlide].classList.add('active');
     }, 4000); // Transitions every 4 seconds
   }
-});
