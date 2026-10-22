@@ -125,7 +125,10 @@ h1{font-size:clamp(46px,7vw,88px);line-height:.98;letter-spacing:-4px;margin:0 0
 .btn-primary:hover{background:#171a1c;}
 .btn-outline{background:#fff;color:#111}
 .btn-outline:hover{background:var(--accent);color:#fff}
-.category-strip{background:#fff;border-bottom:1px solid var(--line)}
+.category-strip{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
 .category-grid{
   display:grid;
   grid-template-columns:repeat(5,1fr)
@@ -212,13 +215,15 @@ h1{font-size:clamp(46px,7vw,88px);line-height:.98;letter-spacing:-4px;margin:0 0
 .center>p:last-child{color:var(--muted);line-height:1.7}
 .application-grid{
   margin-top:48px;
-  display:block;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 7px;
   text-align: center;
 }
 .application-grid article{
   position:relative;
   height:350px;
-  min-width: 600px;
+
   overflow:hidden;
   background:#222;
   display:inline-flex;
