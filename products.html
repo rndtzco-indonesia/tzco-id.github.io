@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TZCO Heavy Machinery — Explore our full catalog of heavy equipment.">
+  <title>Products | TZCO Heavy Machinery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Global Heavy Machinery Solutions</span>
+        <div class="top-links">
+          <a href="https://wa.me/6285219569270">+62 852-1956-9270</a>
+          <a href="https://wa.me/6282281920907">+62 822-8192-0907</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="logotzco.svg" alt="TZCO" class="brand-logo" style="width: 190px; height: auto;">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="products.html?filter=all" class="drop-btn">Products <span>⌄</span></a>
+          <div class="dropdown-panel">
+            <a href="products.html?filter=excavator">Excavator</a>
+            <a href="products.html?filter=crane">Crane</a>
+            <a href="products.html?filter=forklift">Forklifts</a>
+            <a href="products.html?filter=awp">Aerial Work Platform</a>
+            <a href="products.html?filter=dumptruck">Mining Dump Truck</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="news.html">News</a>
+        <a href="index.html#contact">Contact Us</a>
+        <button class="lang-btn" id="langBtn">EN ▾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 175px; background-image: url(upbanner.webp);">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" style="padding: 25px 0;text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.4);">
+        <p class="eyebrow">CATALOG</p>
+        <h1 style="font-size: clamp(32px, 5vw, 56px); margin: 0;">Our <span>Products</span></h1>
+      </div>
+    </section>
+
+    <section class="section products">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow dark">EQUIPMENT SELECTION</p>
+            <h2>Built for <span>Real Work</span></h2>
+          </div>
+          <!-- <div class="filters" role="tablist">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="excavator">Excavator</button>
+            <button class="filter" data-filter="forklift">Forklift</button>
+            <button class="filter" data-filter="crane">Crane</button>
+            <button class="filter" data-filter="awp">Aerial Working Platform</button>
+            <button class="filter" data-filter="dumptruck">Mining Dump Truck</button>
+          </div> -->
+          <div class="filter-wrapper">
+            <!-- Tier 1: Main Category Buttons -->
+            <div class="main-filters">
+              <button class="filter-main active" data-filter="all">All</button>
+              <button class="filter-main" data-filter="excavator">Excavator</button>
+              <button class="filter-main" data-filter="forklift">Forklift</button>
+              <button class="filter-main" data-filter="crane">Crane</button>
+              <button class="filter-main" data-filter="awp">AWP</button>
+              <button class="filter-main" data-filter="dumptruck">Dump Truck</button>
+            </div>
+
+            <!-- Tier 2: Dynamic Subcategory Pills -->
+            <div class="sub-filters" id="subFilters">
+              <!-- Excavator Subcategories -->
+              <button class="filter-sub" data-parent="excavator" data-sub="all">All</button>
+              <!-- <button class="filter-sub" data-parent="excavator" data-sub="mini-excavator">Mini Excavator</button> -->
+              <button class="filter-sub" data-parent="excavator" data-sub="small-excavator">Small Excavator</button>
+              <button class="filter-sub" data-parent="excavator" data-sub="medium-excavator">Medium Excavator</button>
+              <button class="filter-sub" data-parent="excavator" data-sub="large-excavator">Large Excavator</button>
+              <!-- <button class="filter-sub" data-parent="excavator" data-sub="newenergy-excavator">New Energy Excavator</button> -->
+              <!-- <button class="filter-sub" data-parent="excavator" data-sub="drill-excavator">Rotary Drill</button> -->
+
+              <!-- Forklift Subcategories -->
+              <button class="filter-sub" data-parent="forklift" data-sub="all">All</button>
+              <button class="filter-sub" data-parent="forklift" data-sub="e-forklift">Electric Forklift</button>
+              <!-- <button class="filter-sub" data-parent="forklift" data-sub="reach-truck">Reach Truck</button> -->
+              <!-- <button class="filter-sub" data-parent="forklift" data-sub="pallet-stacker">Pallet Stacker</button> -->
+              <!-- <button class="filter-sub" data-parent="forklift" data-sub="pallet-truck">Pallet Truck</button> -->
+              <!-- <button class="filter-sub" data-parent="forklift" data-sub="agv-forklift">AGV</button> -->
+
+              <!-- Crane Subcategories -->
+              <button class="filter-sub" data-parent="crane" data-sub="all">All</button>
+              <button class="filter-sub" data-parent="crane" data-sub="truck-crane">Truck Crane</button>
+              <button class="filter-sub" data-parent="crane" data-sub="crawler-crane">Crawler Crane</button>
+              <!-- <button class="filter-sub" data-parent="crane" data-sub="truckmounted-crane">Truck Mounted Crane</button> -->
+
+              <!-- AWP Subcategories -->
+              <button class="filter-sub" data-parent="awp" data-sub="all">All</button>
+              <button class="filter-sub" data-parent="awp" data-sub="scissor-lift">Scissor Lift</button>
+              <button class="filter-sub" data-parent="awp" data-sub="boom-lift">Boom Lift</button>
+
+              <!-- Dump Truck Subcategories -->
+              <button class="filter-sub" data-parent="dumptruck" data-sub="all">All</button>
+              <button class="filter-sub" data-parent="dumptruck" data-sub="diesel-dt">Diesel Dump Truck</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- DYNAMIC GRID CONTAINER -->
+        <div class="product-grid" id="productGrid"></div>
+
+        <!-- CARD HTML STRUCTURE TEMPLATE (Lives in HTML file) -->
+        <template id="productCardTemplate">
+          <article class="product-card">
+            <div class="product-visual"></div>
+            <div class="product-info">
+              <h4 class="badge-label"></h4>
+              <p class="card-category-label"></p>
+              <h3 class="card-title"></h3>
+              <!-- <div class="specs card-specs"></div> -->
+              <a href="#" class="card-link">View Product →</a>
+            </div>
+          </article>
+        </template>
+        
+        <!-- PAGINATION -->
+        <div class="pagination" id="pagination"></div>
+             
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="logotzcowhite.svg" alt="TZCO" class="brand-logo" style="width: 130px; height: auto;">
+        </a>
+        <p>Intelligent heavy machinery and manufacturing solutions.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="products.html?filter=excavator">Excavator</a>
+        <a href="products.html?filter=crane">Crane</a>
+        <a href="products.html?filter=awp">AWP</a>
+        <a href="products.html?filter=forklift">Forklifts</a>
+        <a href="products.html?filter=dumptruck">Dump Truck</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="news.html">News</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="index.html#contact">Address</a>
+        <a href="index.html#contact"">Email Us</a>
+      </div>
+    </div>
+    <div class="copyright"><div class="container">© <span id="year"></span> TZCO.</div></div>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="products-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

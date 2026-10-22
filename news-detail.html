@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Article Details | TZCO Heavy Machinery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Global Heavy Machinery Solutions</span>
+        <div class="top-links">
+          <a href="https://wa.me/6285219569270">+62 852-1956-9270</a>
+          <a href="https://wa.me/6282281920907">+62 822-8192-0907</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="logotzco.svg" alt="TZCO" class="brand-logo" style="width: 190px; height: auto;">
+      </a>
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container article-container">
+      <!-- Breadcrumb -->
+      <p class="breadcrumb"><a href="news.html">← Back to News & Insights</a></p>
+
+      <!-- Article Header -->
+      <div class="article-header">
+        <div class="article-meta-row">
+          <span id="articleDate" class="article-date"></span>
+          <span id="articleTag" class="article-tag-badge"></span>
+        </div>
+        <h1 id="articleTitle">Article Title</h1>
+      </div>
+
+      <!-- Abstract / First Short Paragraph -->
+      <p id="articleAbstract" class="lead article-abstract"></p>
+    </div>
+    <div class="container">
+      <!-- Image Gallery (Multiple Images after Abstract) -->
+      <div class="article-gallery" id="articleGallery">
+        <!-- Dynamically injected images -->
+      </div>
+    </div>
+
+    <div class="container article-container">
+
+      <!-- Article Body Paragraphs -->
+      <div class="article-body" id="articleBody">
+        <!-- Dynamically injected paragraphs -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="logotzcowhite.svg" alt="TZCO" class="brand-logo" style="width: 130px; height: auto;">
+        </a>
+        <p>Intelligent heavy machinery and manufacturing solutions.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="products.html?filter=excavator">Excavator</a>
+        <a href="products.html?filter=crane">Crane</a>
+        <a href="products.html?filter=awp">AWP</a>
+        <a href="products.html?filter=forklift">Forklifts</a>
+        <a href="products.html?filter=dumptruck">Dump Truck</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="news.html">News</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="index.html#contact">Address</a>
+        <a href="index.html#contact">Email Us</a>
+      </div>
+    </div>
+    <div class="container copyright">© TZCO Heavy Machinery.</div>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="news-data.js"></script>
+  <script src="news-detail.js"></script>
+</body>
+</html>
