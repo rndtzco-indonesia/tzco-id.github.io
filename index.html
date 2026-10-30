@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="tzlogo.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="en" href="https://tzco.com/index.html" />
+  <link rel="alternate" hreflang="id" href="https://tzco.com/id/index.html" />
 </head>
 <body>
   <header class="site-header" id="top">
@@ -45,7 +47,14 @@
         <a href="#applications">Applications</a>
         <a href="#press">News</a>
         <a href="#contact">Contact Us</a>
-        <button class="lang-btn" id="langBtn">EN ▾</button>
+        <!-- <button class="lang-btn" id="langBtn">EN ▾</button> -->
+        <div class="nav-dropdown">
+          <a href="products.html?filter=all" class="drop-btn">EN <span>⌄</span></a>
+          <div class="dropdown-panel">
+            <a href="index.html">English</a>
+            <a href="id/index.html">Bahasa Indonesia</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>

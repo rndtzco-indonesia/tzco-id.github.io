@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TZCO News & Insights — Latest updates, technology guides, and equipment news.">
+  <title>News & Insights | TZCO Heavy Machinery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="tzlogo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Global Heavy Machinery Solutions</span>
+        <div class="top-links">
+          <a href="https://wa.me/6285219569270">+62 852-1956-9270</a>
+          <a href="https://wa.me/6282281920907">+62 822-8192-0907</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a class="brand" href="index.html">
+        <img src="logotzco.svg" alt="TZCO" class="brand-logo" style="width: 190px; height: auto;">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="products.html?filter=all" class="drop-btn">Products <span>⌄</span></a>
+          <div class="dropdown-panel">
+            <a href="products.html?filter=excavator">Excavator</a>
+            <a href="products.html?filter=crane">Crane</a>
+            <a href="products.html?filter=forklift">Forklifts</a>
+            <a href="products.html?filter=awp">Aerial Work Platform</a>
+            <a href="products.html?filter=dumptruck">Mining Dump Truck</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="news.html">News</a>
+        <a href="index.html#contact">Contact Us</a>
+        <button class="lang-btn" id="langBtn">EN ▾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 175px;background-image: url(upbanner2.webp);background-position: center;">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" style="padding: 25px 0; text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.4);">
+        <p class="eyebrow">COMPANY UPDATES</p>
+        <h1 style="font-size: clamp(32px, 5vw, 56px); margin: 0;">News & <span>Insights</span></h1>
+      </div>
+    </section>
+
+    <section class="section news-section">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow dark">LATEST ARTICLES</p>
+            <h2>Industry <span>Knowledge</span></h2>
+          </div>
+          <!-- Filter Buttons for News -->
+          <div class="filters" id="newsFilters" role="tablist">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="news">News</button>
+            <button class="filter" data-filter="rnd">R&D</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Row List Container -->
+        <div class="news-list" id="newsList"></div>
+
+        <!-- News Card Template -->
+        <template id="newsCardTemplate">
+          <article class="news-row-card">
+            <div class="news-row-visual">
+              <img src="" alt="" class="news-row-img" loading="lazy">
+            </div>
+            <div class="news-row-content">
+              <div class="news-row-meta">
+                <span class="news-row-date"></span>
+                <span class="news-row-tag"></span>
+              </div>
+              <h3 class="news-row-title"></h3>
+              <p class="news-row-abstract"></p>
+              <a href="#" class="text-link news-read-more">Read Article <span>→</span></a>
+            </div>
+          </article>
+        </template>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="logotzcowhite.svg" alt="TZCO" class="brand-logo" style="width: 130px; height: auto;">
+        </a>
+        <p>Intelligent heavy machinery and manufacturing solutions.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="products.html?filter=excavator">Excavator</a>
+        <a href="products.html?filter=crane">Crane</a>
+        <a href="products.html?filter=awp">AWP</a>
+        <a href="products.html?filter=forklift">Forklifts</a>
+        <a href="products.html?filter=dumptruck">Dump Truck</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#applications">Applications</a>
+        <a href="news.html">News</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="index.html#contact">Address</a>
+        <a href="index.html#contact">Email Us</a>
+      </div>
+    </div>
+    <div class="copyright"><div class="container">© <span id="year"></span> TZCO.</div></div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="news-data.js"></script>
+  <script src="news-list.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
